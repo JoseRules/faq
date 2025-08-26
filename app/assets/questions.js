@@ -174,6 +174,70 @@ const questions = [
       },
     ],
   },
+  {
+    id: "4",
+    title: "Typescript",
+    content: [
+      {
+        id: "4.1",
+        title: "General",
+        type: "subcategory",
+        content: [
+          {
+            id: "4.1.1",
+            question: "What native types does JS already have?",
+            answer: "number, string, boolean, null, undefined, object and function.",
+          },
+          {
+            id: "4.1.2",
+            question: "What basic types does Typescript add up to the original ones?",
+            answer: "any, unknown, never, array, tuple, Enum and inferred types.",
+          },
+          {
+            id: "4.1.3",
+            question: "What is a tuple?",
+            answer: "A tuple is a typed array with a pre-defined length and types for each index. Tuples allow each element in the array to be a known type of value.",
+          },
+          {
+            id: "4.1.4",
+            question: "What is an enum?",
+            answer: "An enum is a special type that represents a set of named constants. It is a way to create a new type with a set of values. They come in two types, string and numeric, and they can be initialized or not.",
+          },
+          {
+            id: "4.1.5",
+            question: "What is an inferred type?",
+            answer: "An inferred type is a type that is automatically inferred by the compiler based on the value assigned to a variable. It is a way to create a new type with a set of values.",
+          },
+          {
+            id: "4.1.6",
+            question: "What is the type 'never' used for in Typescript?",
+            answer: "The never type is often used in scenarios where TypeScript can infer that a function or variable will never produce a valid value or reach the end of execution. It's particularly useful for catching programming errors and indicating that certain code paths are unreachable.",
+          },
+          {
+            id: "4.1.7",
+            question: "What is the type 'any' used for in Typescript?",
+            answer: "The any type is used to tell the compiler that we don't know the type of the value and we want to avoid type checking and compilation errors. It's particularly useful when we're working with external libraries or when we're dealing with dynamic data.",
+          },
+          {
+            id: "4.1.8",
+            question: "What are Union types?",
+            answer: "Union types are used when a value can be more than a single type. They are defined using the pipe symbol (|).",
+          },
+          {
+            id: "4.1.9",
+            question: "What are Intersection types?",
+            answer: "An intersection type creates a new type by combining multiple existing types. The new type has all features of the existing types. They are defined using the ampersand symbol (&).",
+          },
+          {
+            id: "4.1.10",
+            question: "What are Literal types?",
+            answer: "TypeScript literal types allow developers to specify exact values for variables, function parameters, or properties, enhancing type safety by ensuring variables can only hold predefined values.",
+          },
+          {}
+        ],
+      },
+    ],
+  },
 ];
 
 export default questions;
