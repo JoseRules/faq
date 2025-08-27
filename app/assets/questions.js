@@ -312,6 +312,25 @@ const questions = [
       },
     ],
   },
+  {
+    id: "5",
+    title: "JavaScript",
+    content: [
+      {
+        id: "5.1",
+        title: "General",
+        type: "subcategory",
+        content: [
+          {
+            id: "5.1.1",
+            question: "What is a generator function in JavaScript? How does it work?",
+            answer: "A generator function is a special type of function that can pause its execution at any point and resume later. They are defined using the function* syntax and use the yield keyword to pause execution and return a value.",
+          },
+          
+        ],
+      },
+    ],
+  },
 ];
 
 export default questions;
