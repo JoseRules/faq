@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import questions from "./assets/questions"
+import { parseAnswerText } from "./utils/textParser"
 
 export default function Home() {
   const [openCategories, setOpenCategories] = useState<Set<string>>(new Set())
@@ -42,7 +43,7 @@ export default function Home() {
     <div key={subcategory.id} className="border-l-2 border-gray-300 dark:border-gray-600 ml-4">
       <button
         onClick={() => toggleSubcategory(subcategory.id)}
-        className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-between"
+        className="w-full px-2 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-between"
       >
         <h4 className="font-medium text-foreground">
           {subcategory.title}
@@ -65,7 +66,7 @@ export default function Home() {
       </button>
 
       {openSubcategories.has(subcategory.id) && (
-        <div className="px-4 pb-3 space-y-3">
+        <div className="px-0.5 pb-3 space-y-3" key={subcategory.id}>
           {subcategory.content.map((item: any) => (
             <div 
               key={item.id} 
@@ -75,9 +76,9 @@ export default function Home() {
               <h5 className="font-medium text-foreground mb-2">
                 {item.question}
               </h5>
-              <p className="text-foreground/80 text-sm leading-relaxed">
-                {item.answer}
-              </p>
+              <div className="text-foreground/80 text-sm leading-relaxed">
+                {parseAnswerText(item.answer || '')}
+              </div>
             </div>
           ))}
         </div>
@@ -97,7 +98,7 @@ export default function Home() {
             {/* Category Header */}
             <button
               onClick={() => toggleCategory(category.id)}
-              className="w-full px-6 py-4 text-left bg-surface hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-between"
+              className="w-full px-4 py-4 text-left bg-surface hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 flex items-center justify-between"
             >
               <h3 className="text-xl font-semibold text-foreground">
                 {category.title}
@@ -121,7 +122,7 @@ export default function Home() {
 
             {/* Category Content */}
             {openCategories.has(category.id) && (
-              <div className="px-6 pb-4 space-y-2">
+              <div className="px-1 pb-4 space-y-2">
                 {category.content.map((item) => {
                   if (item.type === 'subcategory') {
                     return renderSubcategory(item)

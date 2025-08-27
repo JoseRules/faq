@@ -11,17 +11,17 @@ const questions = [
           {
             id: "1.1.1",
             question: "What is an algorithm?",
-            answer: "An algorithm is a set of instructions that can be followed to solve a problem or perform a task. It is a step-by-step process that takes input, processes it, and produces output.",
+            answer: "An **algorithm** is a set of instructions that can be followed to solve a problem or perform a task. It is a **step-by-step process** that takes input, processes it, and produces output.",
           },
           {
             id: "1.1.2",
             question: "What is Big O notation?",
-            answer: "Big O notation is a way to describe the time complexity of an algorithm. It is a measure of the number of operations an algorithm takes to complete as a function of the size of the input. It is used to compare the efficiency of different algorithms.",
+            answer: "Big O notation is a way to describe the time complexity of an algorithm. It is a measure of the number of operations an algorithm takes to complete as a function of the size of the input.\n\nKey points:\n- It is used to compare the efficiency of different algorithms\n- It describes the worst-case scenario\n- It ignores constants and lower-order terms\n- Common notations include O(1), O(n), O(n²), O(log n)",
           },
           {
             id: "1.1.3",
             question: "What is constant time complexity?",
-            answer: "Constant time complexity is an algorithm that takes the same amount of time to complete regardless of the size of the input. It is represented by O(1).",
+            answer: "**Constant time complexity** is an algorithm that takes the same amount of time to complete regardless of the size of the input.\n\nKey characteristics:\n- **Time complexity**: O(1)\n- **Performance**: **Consistent** regardless of input size\n- **Examples**: Array access, hash table lookups\n- **Best case**: Always the same performance",
           },
           {
             id: "1.1.4",
@@ -233,7 +233,81 @@ const questions = [
             question: "What are Literal types?",
             answer: "TypeScript literal types allow developers to specify exact values for variables, function parameters, or properties, enhancing type safety by ensuring variables can only hold predefined values.",
           },
-          {}
+          {
+            id: "4.1.11",
+            question: "What are Type Aliases?",
+            answer: "Type aliases create a new name for a type. They are defined using the type keyword. They are declared using the type keyword, followed by the alias name, an equals sign and the type definition.",
+          },
+          {
+            id: "4.1.12",
+            question: "How does TypeScript handle null values?",
+            answer: "By default null and undefined handling is disabled, and can be enabled by setting strictNullChecks to true. null and undefined are primitive types and can be used like other types, such as string. When strictNullChecks is enabled, TypeScript requires values to be set unless undefined is explicitly added to the type.",
+          },
+          {
+            id: "4.1.13",
+            question: "What is Optional Chaining used for in Typescript?",
+            answer: "Optional Chaining is a JavaScript feature that works well with TypeScript's null handling. It allows accessing properties on an object, that may or may not exist, with a compact syntax. It can be used with the ?. operator when accessing properties.",
+          },
+          {
+            id: "4.1.14",
+            question: "What is type assertion?",
+            answer: "Type assertion allow developers to override the compiler's inferred type, informing it of the specific type of a value.\n\n- Type assertions are purely compile-time constructs and do not alter the runtime behavior of the code.\n- They are particularly useful when interfacing with APIs or third-party libraries that return values of type any.\n- They use the 'as' keyword or angle bracket syntax.",
+          },
+          {
+            id: "4.1.15",
+            question: "What is unknown type in Typescript?",
+            answer: "It is the type-safe counterpart of the any type.\n The main difference between unknown and any is that unknown is much less permisive than any, we have to do some form of checking before performing most operations on values of type unknown, whereas we don't have to do any checks before performing operations of type any.",
+          },
+          {
+            id: "4.1.16",
+            question: "How does access control is done in Typescript?",
+            answer: "- **readonly:** This prevents assignments to the field outside of the constructor. \n - **public:** The default visibility of class members is public. A public member can be accessed anywhere. \n - **protected:** Protected members are only visible to subclasses of the class they're declared in. \n- **private:** Private members are only visible inside the class they're declared in. (By convention the variable name is preceded by an underscore)",
+          },
+          {
+            id: "4.1.17",
+            question: "What does static mean in Typescript?",
+            answer: "static is used to declare methods and properties that are owned by the class itself, they are accessed using the class name and dot notation, without creating an object.",
+          },
+          {
+            id: "4.1.18",
+            question: "What are interfaces in TypeScript?",
+            answer: "It is a syntactical contract that defines the expected structure of an object. It provides a way to describe the shape of objects, including their properties and methods, without implementing any functionality. Interfaces solely focus on the structure and type-checking aspects, allowing for better code understanding and validation during development.",
+          },
+          {
+            id: "4.1.19",
+            question: "What are classes in TypeScript?",
+            answer: "It is a blueprint for creating objects. It is a way to create a new type, like an object constructor or a 'blueprint' for an object. It is a way to create a new type, like an object constructor or a 'blueprint' for an object.",
+          },
+          {
+            id: "4.1.20",
+            question: "What is a constructor in Typescript?",
+            answer: "A constructor is a special method that is used to initialize objects. It is a function that is called when a new object is created. It is used to set initial values for object properties.",
+          },
+          {
+            id: "4.1.21",
+            question: "What are abstract classes in TypeScript?",
+            answer: "Is typically used to define common behaviours for derived classes to extend. Unlike a regular class, an abstract class cannot be instantiated directly. It could contain abstract and implemented methods.",
+          },
+          {
+            id: "4.1.22",
+            question: "What is a decorator in TypeScript?",
+            answer: "A decorator is a special kind of declaration that can be attached to a class declaration, method, accessor, property, or parameter. Decorators use the form @expression, where expression must evaluate to a function that will be called at runtime with information about the decorated declaration.",
+          },
+          {
+            id: "4.1.23",
+            question: "Interfaces vs abstract classes in TypeScript?",
+            answer: "- **Purpose:** Abstract classes define common functionality and structure, while interfaces only contractual structure. \n - **Implementation:** Abstract classes contain implemented and abstract methods, while interfaces only contain method signatures. \n - **Multiple Inheritance:** Abstract classes support single class inheritance, while interfaces support multiple interface implementation. \n - **Constructors:** Abstract classes can have constructors for initialization, while interfaces can't. \n - **Usage:** Abstract classes are used to share functionality among related classes, while interfaces are used to design contracts and structure.",
+          },
+          {
+            id: "4.1.24",
+            question: "What are index signatures in TypeScript?",
+            answer: "A type in Typescript usually describes an exact set of fields to match on an object. An index signature is a way to define the shape of fields which are not known ahead of time, it indicates to Typescript that any fields on the object which are not mentioned will be a particular type.",
+          },
+          {
+            id: "4.1.25",
+            question: "What is a namespace in TypeScript?",
+            answer: "A namespace is a way to group related code together. It is a way to create a new scope, like an object constructor or a 'blueprint' for an object. It is a way to create a new scope, like an object constructor or a 'blueprint' for an object.",
+          },
         ],
       },
     ],
