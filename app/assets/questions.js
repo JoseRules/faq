@@ -326,7 +326,11 @@ const questions = [
             question: "What is a generator function in JavaScript? How does it work?",
             answer: "A generator function is a special type of function that can pause its execution at any point and resume later. They are defined using the function* syntax and use the yield keyword to pause execution and return a value.",
           },
-          
+          {
+            id: "5.1.2",
+            question: "What hoisting in JS?",
+            answer: "Hoisting is a behavior in JS where the declaration of a function, variable, or class goes to the top of the scope they were defined in. This allow us to use a function before declaring it in the code. var is hoisted and initialized as undefined, let and const are not initialized, they are in a temporal dead zone.",
+          },
         ],
       },
     ],
