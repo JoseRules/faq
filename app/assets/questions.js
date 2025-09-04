@@ -331,6 +331,63 @@ const questions = [
             question: "What hoisting in JS?",
             answer: "Hoisting is a behavior in JS where the declaration of a function, variable, or class goes to the top of the scope they were defined in. This allow us to use a function before declaring it in the code. var is hoisted and initialized as undefined, let and const are not initialized, they are in a temporal dead zone.",
           },
+          {
+            id: "5.1.3",
+            question: "What is a closure in JavaScript?",
+            answer: "A closure is a function that has access to the variables of its outer scope, even after the outer function has returned. It is a way to create a new scope, like an object constructor or a 'blueprint' for an object. It is a way to create a new scope, like an object constructor or a 'blueprint' for an object.",
+          },
+          {
+            id: "5.1.4",
+            question: "What is a prototype in JavaScript?",
+            answer: "A prototype is a way to create a new object with the properties of the original object. It is a way to create a new scope, like an object constructor or a 'blueprint' for an object. It is a way to create a new scope, like an object constructor or a 'blueprint' for an object.",
+          },
+          {
+            id: "5.1.5",
+            question: "What are the differences between var, let y const?",
+            answer: "- var declaration have a global or a local/function scope, while let and const have a block scope. \n - var variables can be modified and redeclared whithin their scope; let variables can be modified, but not redeclared; const variables cannot be modified nor redeclared. \n - var variable are hoisted and initialized as undefined, let and const are not initialized. \n - While var and let can be declared without being initialized, const must be initialized while declared. \n - const needs to be initialized, while var and let do not need it. \n - While var and let can be declared without being initialized, const must be initialized while declared. \n - const needs to be initialized, while var and let do not need it.",
+          }, 
+          {
+            id: "5.1.6",
+            question: "What is the difference between == and === in JavaScript?",
+            answer: "== is the equality operator and === is the strict equality operator. == is used to compare values and types, while === is used to compare values and types and it does not perform type coercion. == is used to compare values and types, while === is used to compare values and types and it does not perform type coercion.",
+          },
+          {
+            id: "5.1.7",
+            question: "What is the difference between null and undefined in JavaScript?",
+            answer: "null is a value that represents no value, while undefined is a value that represents a value that is not defined. null is a value that represents no value, while undefined is a value that represents a value that is not defined.",
+          },
+          
+          {
+            id: "5.1.8",
+            question: "What is variable shadowing?",
+            answer: "It means we can declare a global variable and a local variable of the same name. In the local scope, in which we declare a local variable using its name, we will have access to the local value. Using this name outside the local scope means that we will be referring to the global variable.",
+          },
+          {
+            id: "5.1.9",
+            question: "What is a promise in JavaScript?",
+            answer: "A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. It is a way to handle asynchronous operations in JavaScript.",
+          },
+          {
+            id: "5.1.10",
+            question: "What is a callback in JavaScript?",
+            answer: "A callback is a function that is passed as an argument to another function. It is a way to handle asynchronous operations in JavaScript.",
+          },
+          {
+            id: "5.1.11",
+            question: "What is nullish coalescing operator?",
+            answer: "The nullish coalescing operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.",
+          },
+          {
+            id: "5.1.12",
+            question: "What is a spread operator in JavaScript?",
+            answer: "The spread operator is a syntax for spreading the elements of an iterable object into another object or array. It is a way to spread the elements of an iterable object into another object or array.",
+          },
+          
+          {
+            id: "5.1.13",
+            question: "What is a rest parameter in JavaScript?",
+            answer: "The rest parameter is a syntax for collecting the remaining elements of an iterable object into an array. It is a way to collect the remaining elements of an iterable object into an array.",
+          },
         ],
       },
     ],
