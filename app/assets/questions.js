@@ -392,6 +392,121 @@ const questions = [
       },
     ],
   },
+  {
+    id: "6",
+    title: "Java",
+    content: [
+      {
+        id: "6.1",
+        title: "General",
+        type: "subcategory",
+        content: [
+          {
+            id: "6.1.1",
+            question: "What does the reserved word static do?",
+            answer: "- In class fields it means, makes field common for all objects of the class (class variable)\n- In class methods, it makes them class methods. not able to access non-static fields or 'this' keyword usage.",
+          },
+          {
+            id: "6.1.2",
+            question: "What does the reserved word final do?",
+            answer: "- In class fields it means, makes field constant. It cannot be changed after initialization.\n- In class methods, it makes them final. It cannot be overridden in the subclass.",
+          },
+          {
+            id: "6.1.3",
+            question: "What does the reserved word abstract do?",
+            answer: "- In class fields it means, makes field abstract. It cannot be initialized. It must be overridden in the subclass.\n- In class methods, it makes them abstract. It cannot have a body. It must be overridden in the subclass.",
+          },
+          {
+            id: "6.1.4",
+            question: "What does the final word allows in Java?",
+            answer: "- In classes it makes it not to be extended\n- In variables it makes it a constant\n- In methods cannot be overrided",
+          },
+          {
+            id: "6.1.5",
+            question: "Why Java is a 'strongly typed' language?",
+            answer: "Java is a strongly typed language because it requires all variables to be declared with a specific type before they can be used. This type checking helps catch errors at compile time, rather than runtime, which makes the code more reliable and easier to debug.",
+          },
+          {
+            id: "6.1.6",
+            question: "Why Java is not fully object-oriented?",
+            answer: "Java is not a fully object-oriented language as it supports primitive data types like int, byte, long, short, etc., which are not objects.",
+          },
+          {
+            id: "6.1.7",
+            question: "What are the primitive data types?",
+            answer: "Contain only a value and include eight built-in data types, which are int, char, byte, short, long, float, double and boolean.",
+          },
+          {
+            id: "6.1.8",
+            question: "What are the rules to define a variable?",
+            answer: "- By convention, variable names start with lowercase\n- It has to be a characters set within the unicode\n- It cannot be the same as a reserved word\n- It should not be the same as other variable in the same scope\n- If it is made out of two or more words, the are placed altogether and each word after the first one should start with capitals (Camel case)\n- It can start with a letter a underscore or dollar sign.",
+          },
+          {
+            id: "6.1.9",
+            question: "What are access modifiers in Java?",
+            answer: "Access modifiers control the visibility of classes methods, and variables. The four access modifiers in Java are: \n - **public:** The member is accessible from any other class.\n - **protected:** The member is accessible within its own package and by subclasses.\n - **default (private package):** The member is accessible only within its own package.\n - **private:** The member is accessible only within its own class.",
+          },
+          {
+            id: "6.1.10",
+            question: "What is Java?",
+            answer: "It is a programming language, multi-purpose, platform independent, mainly used in Object Oriented Programming, high level, compiled.",
+          },
+          {
+            id: "6.1.11",
+            question: "What to use maven or gradel in Java projects?",
+            answer: "We use Maven or Gradel to manage dependencies and folder structure, final compilation.",
+          },
+          {
+            id: "6.1.12",
+            question: "What version of Java introduced functional programming in Java?",
+            answer: "Java 8 in 2014",
+          }
+        ],
+      },
+      {
+        id: "6.2",
+        title: "OOP",
+        type: "subcategory",
+        content: [
+          {
+            id: "6.2.1",
+            question: "What is a class in Java?",
+            answer: "A class is a template describing multiple similar objects in the real world or in a virtual world. This set of objects should have the same set of characteristics (fields/properties) and the same set of actions that can be performed with these objects by changing their internal state.",
+          },
+          {
+            id: "6.2.2",
+            question: "What is an object in Java?",
+            answer: "An object is an instance of a class. It has its features/characteristics. For each created object, these characteristics have their own values that are specific to the object.",
+          },
+          {
+            id: "6.2.3",
+            question: "What are the four pilars of POO?",
+            answer: "Inheritance, Polymorphism, Abstraction and Encapsulation",
+          },
+          {
+            id: "6.2.4",
+            question: "What is inheritance in Java?",
+            answer: "It is when a class receives or extends properties or methods from another, this allows for code reusability and modular design, and to not repeat code.\n\nIt is a property that allows a new class to be created based on an existing one, and in which the properties of the parent class will be assigned to the child class.",
+          },
+          {
+            id: "6.2.5",
+            question: "What is polymorphism in Java?",
+            answer: "Is the ability of objects to respond to the same message or method call in multiple ways.\n\nIt is the ability to provide a single interface to entities of different types.",
+          },
+          {
+            id: "6.2.6",
+            question: "What is abstraction in Java?",
+            answer: "Hiding implementation details, such as inside a function or prototype. This allows the user to call the function without needing to understand how it works.",
+          },
+          {
+            id: "6.2.7",
+            question: "What is encapsulation in Java?",
+            answer: "Packaging code, variables, and parameters together. The only way to access the encapsulated data is through a function.\n\nIs a property that allows data and the methods used to work with it to be consolidated in a class while hiding the implementation details from users.",
+          },
+        ],
+      }
+    ],
+  }
 ];
 
 export default questions;
