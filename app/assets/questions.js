@@ -101,6 +101,18 @@ const questions = [
           },
         ],
       },
+      {
+        id: "1.5",
+        title: "Patterns / Techniques",
+        type: "subcategory",
+        content: [
+          {
+            id: "1.5.1",
+            question: "What is the sliding window technique?",
+            answer: "- Instead of repeatedly iterating over the same elements, the sliding window maintains a range (or 'window') that moves step-by-step through the data, updating the results incrementally.\n - The main idea is to use the results of previous window to do computations for the next window. \n - Commonly used for problems that require a fixed-size window to process elements efficiently.",
+          },
+        ],
+      }
     ],
   },
   {
