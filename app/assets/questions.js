@@ -472,6 +472,50 @@ const questions = [
             id: "6.1.12",
             question: "What version of Java introduced functional programming in Java?",
             answer: "Java 8 in 2014",
+          },
+          {
+            id: "6.2.13",
+            question: "What is a method in Java?",
+            answer: "It is a function that is part of a class, it can be used to perform some actions or to return a value.",
+          },
+          {
+            id: "6.2.14",
+            question: "What is a field in Java?",
+            answer: "It is a variable that is part of a class, it can be used to store some data.",
+          },
+          {
+            id: "6.2.15",
+            question: "What is a parameter in Java?",
+            answer: "It is a variable that is part of a method, it can be used to pass some data to the method.",
+          },
+          {
+            id: "6.2.16",
+            question: "What is a return type in Java?",
+            answer: "It is the type of the value that is returned by the method.",
+          },
+          {
+            id: "6.2.17",
+            question: "What is a method overload in Java?",
+            answer: "When we have several method with the same name but different parameters and according to parameters it will do different things.",
+          },
+          {
+            id: "6.2.18",
+            question: "What is a method override in Java?",
+            answer: "When we have several method with the same name but different parameters and according to parameters it will do different things.",
+          },
+          {
+            id: "6.2.19",
+            question: "What is an enum in Java?",
+            answer: "An enum type is a special data type that enables for a variable to be a set of predefined constants.\n\nThe variable must be equal to one of the values that have been predefined for it.",
+          },
+          {
+            id: "6.2.20",
+            question: "What is an array in Java?",
+            answer: "An array is a container object that holds a fixed number of values of a single type.\n\nThe length of an array is established when the array is created. After creation, its length is fixed.\n\nEach item in an array is called an element, and each element is accessed by its numerical index.\n\nIndexes begin in zero."
+          },
+          {
+            id: "6.2.21",
+            question: "What is a thread pool in Java?",
           }
         ],
       },
@@ -515,6 +559,56 @@ const questions = [
             question: "What is encapsulation in Java?",
             answer: "Packaging code, variables, and parameters together. The only way to access the encapsulated data is through a function.\n\nIs a property that allows data and the methods used to work with it to be consolidated in a class while hiding the implementation details from users.",
           },
+          {
+            id: "6.2.8",
+            question: "What is a constructor in Java?",
+            answer: "It is convoked at the moment of creating a new Object, could help you to initialized some attributes and call some methods, and it supports method overload.",
+          },
+          {
+            id: "6.2.9",
+            question: "What is a destructor in Java?",
+            answer: "It is convoked at the moment of destroying a new Object, could help you to clean up some attributes and call some methods, and it supports method overload.",
+          },
+          {
+            id: "6.2.10",
+            question: "What is a method override in Java?",
+            answer: "When we have several method with the same name but different parameters and according to parameters it will do different things.",
+          },
+          {
+            id: "6.2.11",
+            question: "Can an interface have default and static methods?",
+            answer: "Yes, an interface can have default and static methods.",
+          },
+          {
+            id: "6.2.12",
+            question: "What does the word new do in Java?",
+            answer: "It is used to allocate memory for an object on the heap and then calls the constructor of the object to initialize the object's state (or attributes).",
+          },
+          {
+            id: "6.2.13",
+            question: "What is an abstract class in Java?",
+            answer: "It is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).\n\nThey provide a common definition for a base class that can be shared by multiple derived classes. \n\nThey are used when there is an 'is-a' relationship between the base class and its subclasses. \n\nAbstract classes can contain both abstract and non-abstract methods, static and non-static methods \n\nand final and non-final variables.",
+          },
+          {
+            id: "6.2.14",
+            question: "What is an interface in Java?",
+            answer: "It is a type of elements that works as a contract or template, that define method signatures without implementations, giving classes a template to follow. They encourage code flexibility, which facilitates scalability and easier maintenance.\n\nThey can only contain abstract methods and only final and static variables. Interfaces do not contain constructors, fields or destructors, but they have only the property's signature with no implementation.",
+          },
+          {
+            id: "6.2.15",
+            question: "What is a superclass in Java?",
+            answer: "It is the class from which the subclass inherits. It is the class that contains the methods and attributes that the subclass will inherit.",
+          },
+          {
+            id: "6.2.16",
+            question: "What is a subclass in Java?",
+            answer: "It is the class that inherits from the superclass. It is the class that contains the methods and attributes that the subclass will inherit.",
+          },
+          {
+            id: "6.2.17",
+            question: "When would you use an abstract class vs an interface?",
+            answer: "- Abstract classes support multiple inheritance, while interfaces do not.\n- The keyword extend is used to extend an abstract class, while the keyword implement is used to implement an interface.\n- Interfaces form a contract between the class and the outside world, which is enforced at build time by the compiler.",
+          },          
         ],
       }
     ],
